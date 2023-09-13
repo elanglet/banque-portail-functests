@@ -13,7 +13,7 @@ name = "banque-portail-functests"
 version = "1.0.0"
 description = "Tests fonctionnels Selenium pour la portail bancaire"
 
-default_task = "run_unit_tests"
+default_task = [ "install_dependencies", "run_unit_tests" ]
 
 
 @init
