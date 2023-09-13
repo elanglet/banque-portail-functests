@@ -1,0 +1,9 @@
+services:
+    mariadb-formation:
+        image: mariadb-formation:1.0
+        build: ./image
+        ports:
+          - 3307:3306
+        environment:
+            - MARIADB_RANDOM_ROOT_PASSWORD=yes
+        container_name: mariadb-formation
